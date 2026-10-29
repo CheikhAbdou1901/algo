@@ -1,0 +1,34 @@
+Algorithme Analyse_Phrase
+Variables :
+phrase : chaîne de caractères
+caractere : caractère
+longueur, mots, voyelles : entiers
+i : entier
+
+Début
+    Ecrire("Entrer une phrase qui se termine par un point : ")
+    Lire(phrase)
+
+    longueur := 0
+    mots := 1
+    voyelles := 0
+
+    Pour chaque caractère de la phrase faire
+
+        longueur := longueur + 1
+
+        Si le caractère est une voyelle alors
+            voyelles := voyelles + 1
+        Fin Si
+
+        Si le caractère est un espace alors
+            mots := mots + 1
+        Fin Si
+
+    Fin Pour
+
+    Ecrire("La longueur de la phrase est : ", longueur)
+    Ecrire("Le nombre de mots est : ", mots)
+    Ecrire("Le nombre de voyelles est : ", voyelles)
+
+Fin
